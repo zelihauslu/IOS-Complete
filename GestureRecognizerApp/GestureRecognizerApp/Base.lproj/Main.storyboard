@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="guns2" translatesAutoresizingMaskIntoConstraints="NO" id="15W-aZ-ElE">
+                                <rect key="frame" x="46" y="186" width="323" height="197"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gun's n Roses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u52-1c-aHa">
+                                <rect key="frame" x="139" y="454" width="136" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="5V0-Fo-TpG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u52-1c-aHa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="20C-vn-Y0N"/>
+                            <constraint firstItem="15W-aZ-ElE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="4LD-pT-tX8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u52-1c-aHa" secondAttribute="bottom" constant="365" id="6wn-tq-LCD"/>
+                            <constraint firstItem="15W-aZ-ElE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LJn-eo-lVg"/>
+                            <constraint firstItem="15W-aZ-ElE" firstAttribute="centerX" secondItem="u52-1c-aHa" secondAttribute="centerX" id="efv-z1-AVc"/>
+                            <constraint firstItem="15W-aZ-ElE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="gCL-4T-cHa"/>
+                            <constraint firstItem="u52-1c-aHa" firstAttribute="top" secondItem="15W-aZ-ElE" secondAttribute="bottom" constant="71" id="tMa-wi-CMs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="15W-aZ-ElE" id="BJg-lf-4k2"/>
+                        <outlet property="myLabel" destination="u52-1c-aHa" id="PCF-2a-TsN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="guns2" width="275" height="183"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
